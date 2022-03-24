@@ -30,6 +30,11 @@ export default defineHopeConfig({
       title: "node-tutor",
       description: "node简明教程",
     },
+    "/en/": {
+      lang: "en-US",
+      title: "node-tutor",
+      description: "node tutorial",
+    },
   },
 
   themeConfig,
