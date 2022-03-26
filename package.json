@@ -1,18 +1,20 @@
 {
-  "name": "cs-guide",
+  "name": "node-docs",
   "version": "1.0.0",
   "description": "pc documents",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "docs:build": "vuepress build docs",
     "docs:clean-dev": "vuepress dev docs --clean-cache",
-    "docs:dev": "vuepress dev docs  "
+    "docs:dev": "vuepress dev docs   --clean-cache"
   },
   "devDependencies": {
-    "@vuepress/plugin-git": "^2.0.0-beta.36",
-    "@vuepress/plugin-register-components": "^2.0.0-beta.35",
-    "@vuepress/plugin-search": "^2.0.0-beta.35",
-    "vuepress": "^2.0.0-beta.36",
-    "vuepress-theme-hope": "^2.0.0-beta.24"
+    "@vuepress/cli": "next",
+    "@vuepress/client": "next",
+    "vue": "3.2.37",
+    "vuepress2-plugin-full-text-search": "latest",
+    "vuepress": "next",
+    "vuepress-theme-hope": "next"
   }
 }

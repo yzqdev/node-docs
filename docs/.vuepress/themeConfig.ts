@@ -1,23 +1,24 @@
-import { defineThemeConfig } from "vuepress-theme-hope";
-import { zhNavbar, enNavbar } from "./navbar";
-import { zhSidebar, enSidebar } from "./sidebar";
+import { zhNavbar } from "./navbar";
+import { zhSidebar } from "./sidebar";
+import { hopeTheme } from "vuepress-theme-hope";
 
-export default defineThemeConfig({
-  hostname: "https://yzqdev.github.io/node-tutor",
-
-  author: {
-    name: "yzqdev",
-    url: "http://www.yzqdev.top",
-  },
+export default hopeTheme({
+  hostname: "https://yzqdev.github.io/node-docs",
 
   iconPrefix: "iconfont icon-",
 
-  logo: "/ayaka.jpg",
+  logo: "/images/node.png",
 
-  repo: "https://github.com/yzqdev/cs-guide",
+  repo: "https://github.com/yzqdev/node-docs",
 
-  // docsDir: "demo/src",
-
+  docsDir: "docs",
+  themeColor: {
+    blue: "#2196f3",
+    red: "#f26d6d",
+    green: "#3eaf7c",
+    orange: "#fb9b5f",
+  },
+  fullscreen: true,
   // navbar
   locales: {
     "/": {
@@ -30,31 +31,12 @@ export default defineThemeConfig({
 
       displayFooter: true,
     },
-    "/en/": {
-      navbar: enNavbar,
-
-      // sidebar
-      sidebar: enSidebar,
-
-      footer: `powered by <a href='https://vuepress-theme-hope.github.io/v2/'>vuepress-theme-home</a>`,
-
-      displayFooter: true,
-    },
   },
 
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
 
   plugins: {
     blog: false,
-
-    // 你也可以使用 Waline
-    comment: {
-      type: "giscus",
-      repo: "yzqdev/blog-issues",
-      repoId: "MDEwOlJlcG9zaXRvcnkzODI2NTY1MTY=",
-      category: "General",
-      categoryId: "DIC_kwDOFs7gBM4COKgn",
-    },
 
     mdEnhance: {
       enableAll: true,

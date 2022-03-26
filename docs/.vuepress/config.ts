@@ -1,12 +1,21 @@
-import { defineHopeConfig } from "vuepress-theme-hope";
-import themeConfig from "./themeConfig";
+import theme from "./themeConfig";
+import searchPlugin from "vuepress2-plugin-full-text-search";
+import { defineUserConfig } from "vuepress";
 
-export default defineHopeConfig({
-  base: "/node-tutor/",
+export default defineUserConfig({
+  base: "/node-docs/",
 
   dest: "./dist",
 
   head: [
+    [
+      "link",
+      {
+        rel: "icon",
+
+        href: `/node-docs/images/node.png`,
+      },
+    ],
     [
       "link",
       {
@@ -19,7 +28,7 @@ export default defineHopeConfig({
       //我的iconfont库
       {
         rel: "stylesheet",
-        href: "//at.alicdn.com/t/font_3267094_j92iwdcfcxp.css",
+        href: "//at.alicdn.com/t/font_3267094_0pfgirl8r8qg.css",
       },
     ],
   ],
@@ -27,65 +36,19 @@ export default defineHopeConfig({
   locales: {
     "/": {
       lang: "zh-CN",
-      title: "node-tutor",
+      title: "node-docs",
       description: "node简明教程",
-    },
-    "/en/": {
-      lang: "en-US",
-      title: "node-tutor",
-      description: "node tutorial",
     },
   },
 
-  themeConfig,
+  theme,
   plugins: [
-    [
-      "@vuepress/plugin-search",
-      {
-        locales: {
-          "/": {
-            placeholder: "搜索文档",
-            translations: {
-              button: {
-                buttonText: "搜索文档",
-                buttonAriaLabel: "搜索文档",
-              },
-              modal: {
-                searchBox: {
-                  resetButtonTitle: "清除查询条件",
-                  resetButtonAriaLabel: "清除查询条件",
-                  cancelButtonText: "取消",
-                  cancelButtonAriaLabel: "取消",
-                },
-                startScreen: {
-                  recentSearchesTitle: "搜索历史",
-                  noRecentSearchesText: "没有搜索历史",
-                  saveRecentSearchButtonTitle: "保存至搜索历史",
-                  removeRecentSearchButtonTitle: "从搜索历史中移除",
-                  favoriteSearchesTitle: "收藏",
-                  removeFavoriteSearchButtonTitle: "从收藏中移除",
-                },
-                errorScreen: {
-                  titleText: "无法获取结果",
-                  helpText: "你可能需要检查你的网络连接",
-                },
-                footer: {
-                  selectText: "选择",
-                  navigateText: "切换",
-                  closeText: "关闭",
-                  searchByText: "搜索提供者",
-                },
-                noResultsScreen: {
-                  noResultsText: "无法找到相关结果",
-                  suggestedQueryText: "你可以尝试查询",
-                  openIssueText: "你认为该查询应该有结果？",
-                  openIssueLinkText: "点击反馈",
-                },
-              },
-            },
-          },
+    searchPlugin({
+      locales: {
+        "/": {
+          placeholder: "搜索文档",
         },
       },
-    ],
+    }),
   ],
 });
