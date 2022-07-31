@@ -12,7 +12,7 @@ index: 4
 NodeJS本来的用途是编写高性能Web服务器。我们首先在这里重复一下官方文档里的例子，使用NodeJS内置的`http`模块简单实现一个HTTP服务器。
 
 ```js
- let http = require('http');
+import * as http from 'http'
 
  http.createServer(function (request, response) {
   response.writeHead(200, { 'Content-Type': 'text-plain' });

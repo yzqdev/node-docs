@@ -16,7 +16,7 @@ features:
   - title: cs-guide
     details: 计算机技术教程
     icon: computer
-    link: https://yzqdev.github.io/cs-guide
+    link: https://yzqdev.github.io/cs-guide/
  
   
   - title: git教程

@@ -10,11 +10,11 @@
     "docs:dev": "vuepress dev docs   --clean-cache"
   },
   "devDependencies": {
-    "@vuepress/cli": "next",
-    "@vuepress/client": "next",
+    "@vuepress/cli": "2.0.0-beta.49",
+    "@vuepress/client": "2.0.0-beta.49","vuepress-shared":"2.0.0-beta.87",
     "vue": "3.2.37",
     "vuepress2-plugin-full-text-search": "latest",
-    "vuepress": "next",
-    "vuepress-theme-hope": "next"
+    "vuepress": "2.0.0-beta.49",
+    "vuepress-theme-hope": "2.0.0-beta.87"
   }
 }
