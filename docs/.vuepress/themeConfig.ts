@@ -39,10 +39,12 @@ export default hopeTheme({
     blog: false,
 
     mdEnhance: {
-      enableAll: true,
-      presentation: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"],
-      },
+      tabs: true,
+      codetabs: true,
+      lazyLoad: true,
+      demo: true,
+      sub: true,
+      sup: true,
     },
   },
 });
