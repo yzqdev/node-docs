@@ -1,27 +1,27 @@
-import { zhNavbar } from "./navbar";
-import { zhSidebar } from "./sidebar";
-import { hopeTheme } from "vuepress-theme-hope";
+import { zhNavbar } from './navbar'
+import { zhSidebar } from './sidebar'
+import { hopeTheme } from 'vuepress-theme-hope'
 
 export default hopeTheme({
-  hostname: "https://yzqdev.github.io/node-docs",
+  hostname: 'https://yzqdev.github.io/node-docs',
 
-  iconPrefix: "iconfont icon-",
+  iconPrefix: 'iconfont icon-',
 
-  logo: "/images/node.png",
+  logo: '/images/node.png',
 
-  repo: "https://github.com/yzqdev/node-docs",
+  repo: 'https://github.com/yzqdev/node-docs',
 
-  docsDir: "docs",
+  docsDir: 'docs',
   themeColor: {
-    blue: "#2196f3",
-    red: "#f26d6d",
-    green: "#3eaf7c",
-    orange: "#fb9b5f",
+    blue: '#2196f3',
+    red: '#f26d6d',
+    green: '#3eaf7c',
+    orange: '#fb9b5f',
   },
   fullscreen: true,
   // navbar
   locales: {
-    "/": {
+    '/': {
       navbar: zhNavbar,
 
       // sidebar
@@ -33,7 +33,7 @@ export default hopeTheme({
     },
   },
 
-  pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
+  pageInfo: ['Author', 'Original', 'Date', 'Category', 'Tag', 'ReadingTime'],
 
   plugins: {
     blog: false,
@@ -47,4 +47,4 @@ export default hopeTheme({
       sup: true,
     },
   },
-});
+})

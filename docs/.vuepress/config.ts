@@ -1,50 +1,50 @@
-import theme from "./themeConfig";
+import theme from './themeConfig'
 // import searchPlugin from "vuepress-plugin-full-text-search2";
-import { searchPlugin } from "@vuepress/plugin-search";
-import { defineUserConfig } from "vuepress";
+import { searchPlugin } from '@vuepress/plugin-search'
+import { defineUserConfig } from 'vuepress'
 
 export default defineUserConfig({
-  base: "/node-docs/",
+  base: '/node-docs/',
 
-  dest: "./dist",
+  dest: './dist',
 
   head: [
     [
-      "link",
+      'link',
       {
-        rel: "icon",
+        rel: 'icon',
 
         href: `/node-docs/images/node.png`,
       },
     ],
     [
-      "link",
+      'link',
       {
-        rel: "stylesheet",
-        href: "//at.alicdn.com/t/font_2410206_mfj6e1vbwo.css",
+        rel: 'stylesheet',
+        href: '//at.alicdn.com/t/font_2410206_mfj6e1vbwo.css',
       },
     ],
     [
-      "link",
+      'link',
       //我的iconfont库
       {
-        rel: "stylesheet",
-        href: "//at.alicdn.com/t/font_3267094_0pfgirl8r8qg.css",
+        rel: 'stylesheet',
+        href: '//at.alicdn.com/t/font_3267094_0pfgirl8r8qg.css',
       },
     ],
   ],
 
   locales: {
-    "/": {
-      lang: "zh-CN",
-      title: "node-docs",
-      description: "node简明教程",
+    '/': {
+      lang: 'zh-CN',
+      title: 'node-docs',
+      description: 'node简明教程',
     },
   },
 
   theme,
   plugins: [
-    searchPlugin
+    searchPlugin,
     // searchPlugin({
     //   locales: {
     //     "/": {
@@ -53,4 +53,4 @@ export default defineUserConfig({
     //   },
     // }),
   ],
-});
+})
