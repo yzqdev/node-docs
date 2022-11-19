@@ -41,7 +41,7 @@ export default hopeTheme({
     mdEnhance: {
       tabs: true,
       codetabs: true,
-      lazyLoad: true,
+     
       demo: true,
       sub: true,
       sup: true,
