@@ -1,6 +1,6 @@
 import theme from './themeConfig'
 // import searchPlugin from "vuepress-plugin-full-text-search2";
-import { searchPlugin } from '@vuepress/plugin-search'
+import { searchProPlugin } from 'vuepress-plugin-search-pro'
 import { defineUserConfig } from 'vuepress'
 
 export default defineUserConfig({
@@ -44,13 +44,8 @@ export default defineUserConfig({
 
   theme,
   plugins: [
-    searchPlugin,
-    // searchPlugin({
-    //   locales: {
-    //     "/": {
-    //       placeholder: "搜索文档",
-    //     },
-    //   },
-    // }),
+   searchProPlugin({
+    indexContent:true
+   })
   ],
 })
