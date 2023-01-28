@@ -1,6 +1,6 @@
 ---
 home: true
-title: 首页
+heroText: 首页
 heroImage: /images/node.png
 actions:
   - text: node指南 💡
