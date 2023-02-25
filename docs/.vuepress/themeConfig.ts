@@ -12,7 +12,7 @@ export default hopeTheme({
   repo: 'https://github.com/yzqdev/node-docs',
 
   docsDir: 'docs',
-  pure:false,
+  pure: false,
   themeColor: {
     blue: '#2196f3',
     red: '#f26d6d',
@@ -38,7 +38,10 @@ export default hopeTheme({
 
   plugins: {
     blog: false,
-
+    prismjs: {
+      light: 'tomorrow',
+      dark: 'tomorrow',
+    },
     mdEnhance: {
       tabs: true,
       codetabs: true,
