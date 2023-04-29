@@ -6,7 +6,7 @@ export default hopeTheme({
   hostname: 'https://yzqdev.github.io/node-docs',
 
   iconPrefix: 'iconfont icon-',
-
+pcBreakPoint:1600,
   logo: '/images/node.png',
 
   repo: 'https://github.com/yzqdev/node-docs',

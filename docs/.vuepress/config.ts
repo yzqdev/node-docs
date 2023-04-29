@@ -2,7 +2,7 @@ import theme from './themeConfig'
 // import searchPlugin from "vuepress-plugin-full-text-search2";
 import { searchProPlugin } from 'vuepress-plugin-search-pro'
 import { defineUserConfig } from 'vuepress'
-
+import { autoCatalogPlugin } from 'vuepress-plugin-auto-catalog'
 export default defineUserConfig({
   base: '/node-docs/',
 
@@ -44,6 +44,7 @@ export default defineUserConfig({
 
   theme,
   plugins: [
+      autoCatalogPlugin(),
    searchProPlugin({
     indexContent:true
    })

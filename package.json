@@ -10,14 +10,14 @@
     "docs:dev": "vuepress dev docs  --port 9050"
   },
   "devDependencies": {
-    "@vuepress/cli": "2.0.0-beta.60",
-    "@vuepress/client": "2.0.0-beta.60",
-    "sass": "1.58.0",
-    "sass-loader": "13.2.0",
+    "@vuepress/cli": "2.0.0-beta.61",
+    "@vuepress/client": "2.0.0-beta.61",
+    "sass": "1.62.1",
+    "sass-loader": "13.2.2",
     "vue": "3.2.47",
-    "vuepress": "2.0.0-beta.60",
-    "vuepress-plugin-search-pro": "2.0.0-beta.181",
-    "vuepress-theme-hope": "2.0.0-beta.181",
-    "vuepress-webpack": "2.0.0-beta.60"
+    "vuepress": "2.0.0-beta.61",
+    "vuepress-plugin-search-pro": "2.0.0-beta.206",
+    "vuepress-theme-hope": "2.0.0-beta.206",
+    "vuepress-webpack": "2.0.0-beta.61"
   }
 }

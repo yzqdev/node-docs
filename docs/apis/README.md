@@ -1,1 +1,2 @@
 # node api
+<AutoCatalog   />
